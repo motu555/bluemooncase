@@ -1,0 +1,97 @@
+{
+  "name": "flare",
+  "description": "flare",
+  "children": [
+    {
+      "name": "洗衣液",
+      "description": "laundry detergent",
+      "children": [
+        {
+          "name": "手洗专用",
+          "description": "cluster",
+          "children": [
+            {"name": "亮白增艳", "description": "AgglomerativeCluster",
+              "children":[
+                {"name":"薰衣草","description":"","size": 3938},
+                {"name":"自然清香","description":"","size": 6538},
+                {"name":"风清白兰","description":"","size": 6538}
+
+              ]},
+            {"name": "深层洁净", "description": "CommunityStructure", "size": 3812}
+          ]
+        },
+        {
+          "name": "深层洁净",
+          "description": "graph",
+          "children": [
+            {"name": "自然清香", "description": "BetweennessCentrality", "size": 3534},
+            {"name": "风清白兰", "description": "LinkDistance", "size": 5731},
+            {"name": "薰衣草", "description": "MaxFlowMinCut", "size": 7840}
+          ]
+        },
+        {
+          "name": "亮白增艳",
+          "description": "graph",
+          "children": [
+            {"name": "自然清香", "description": "BetweennessCentrality", "size": 3534},
+            {"name": "风清白兰", "description": "LinkDistance", "size": 5731},
+            {"name": "薰衣草", "description": "MaxFlowMinCut", "size": 7840}
+          ]
+        },
+
+        {
+          "name": "机洗专用",
+          "description": "optimization",
+          "children": [
+            {"name": "AspectRa", "description": "AspectRatioBanker", "size": 7074}
+          ]
+        },
+        {
+          "name": "宝宝专用",
+          "description": "optimization",
+          "children": [
+            {"name": "AspectRa", "description": "AspectRatioBanker", "size": 7074}
+          ]
+        }
+
+      ]
+    },
+    {
+      "name": "洗手液",
+      "description": "animate",
+      "children": [
+        {"name": "抑菌", "description": "Easing", "size": 17010},
+        {"name": "健康", "description": "FunctionSequence", "size": 5842},
+        {"name": "清香", "description": "FunctionSequence", "size": 3442},
+        {"name": "儿童专用", "description": "FunctionSequence", "size": 2342},
+        {"name": "维生素E", "description": "FunctionSequence", "size": 5672}
+
+      ]
+    },
+
+    {
+      "name": "衣物护理",
+      "description": "data",
+      "children": [
+        {"name": "白色衣物渍净", "description": "Converters", "size": 721},
+        {"name": "彩色衣物", "description": "DelimitedTextConverter", "size": 4294},
+        {"name": "绿色柔顺剂",
+              "description": "GraphMLConverter",
+              "children": [
+                {"name": "薰衣草", "description": "DelimitedTextConverter", "size": 4294},
+                {"name": "玉玲兰香", "description": "DelimitedTextConverter", "size": 4294}
+              ]
+            },
+        {"name": "衣领净", "description": "DataField", "size": 1759}
+      ]
+    },
+    {
+      "name": "家庭清洁",
+      "description": "display",
+      "children": [
+        {"name": "厕宝", "description": "DirtySprite", "size": 8833},
+        {"name": "洁厕液", "description": "LineSprite", "size": 1732}
+      ]
+    }
+  ]
+}
